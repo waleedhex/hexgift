@@ -2,7 +2,7 @@
     "name": "لوحة الحروف السداسية",
     "short_name": "لوحة هيكس",
     "description": "لوحة الحروف السداسية مقدمة من متجر هيكس",
-    "start_url": "hex-board.html",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#4b0082",
     "theme_color": "#4b0082",

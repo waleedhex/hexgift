@@ -1,7 +1,6 @@
 const CACHE_NAME = 'hex-board-cache-v1';
 const urlsToCache = [
-    'hex-board.html',
-    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
+    '/index.html'
 ];
 
 self.addEventListener('install', event => {
@@ -9,6 +8,9 @@ self.addEventListener('install', event => {
         caches.open(CACHE_NAME)
             .then(cache => {
                 return cache.addAll(urlsToCache);
+            })
+            .catch(error => {
+                console.error('فشل التخزين المؤقت:', error);
             })
     );
 });
