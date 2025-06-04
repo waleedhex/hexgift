@@ -1,7 +1,9 @@
+```javascript
 const CACHE_NAME = 'hex-board-cache-v2';
 const urlsToCache = [
     '/index.html',
     '/assets/logo.png',
+    '/assets/tlogo.png', // أضفنا الصورة الجديدة
     '/manifest.json',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'
     // ملاحظة: قد لا يتم تخزين Google Fonts بسبب CORS
@@ -42,3 +44,4 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+```
