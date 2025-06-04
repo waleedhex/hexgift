@@ -1,0 +1,21 @@
+{
+    "name": "لوحة الحروف السداسية",
+    "short_name": "لوحة هيكس",
+    "description": "لوحة الحروف السداسية مقدمة من متجر هيكس",
+    "start_url": "hex-board.html",
+    "display": "standalone",
+    "background_color": "#4b0082",
+    "theme_color": "#4b0082",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
