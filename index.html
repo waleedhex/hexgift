@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#4b0082">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Tahoma', sans-serif;
+            font-family: 'Tajawal', sans-serif;
             background: #4b0082;
             display: flex;
             justify-content: center;
@@ -27,25 +28,6 @@
             padding: 1vw;
             width: 100%;
             box-sizing: border-box;
-        }
-        h2 {
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 24px;
-        }
-        #visitButton {
-            padding: 8px 16px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-        #visitButton:hover {
-            background-color: #218838;
         }
         .hex-grid {
             padding: 0;
@@ -238,6 +220,39 @@
         .install-instructions-content button:hover {
             background: #0056b3;
         }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #4b0082;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+        .text-container {
+            text-align: center;
+            color: #fff;
+            margin: 20px 0;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .text-container p {
+            margin: 5px 0;
+            font-size: 20px;
+        }
+        .logo-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .logo-container img {
+            width: 120px;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .logo-container img:hover {
+            transform: scale(1.1);
+        }
         @media (max-width: 600px) {
             .hex-grid {
                 width: calc(7 * (95vw / 7) + 6 * (95vw / 200));
@@ -273,12 +288,11 @@
                 font-size: 18vw;
                 -webkit-text-stroke: 1.5px #000000;
             }
-            h2 {
-                font-size: 18px;
+            .text-container p {
+                font-size: 16px;
             }
-            #visitButton {
-                font-size: 14px;
-                padding: 6px 12px;
+            .logo-container img {
+                width: 80px;
             }
             .install-instructions-content p {
                 font-size: 14px;
@@ -287,13 +301,15 @@
                 font-size: 14px;
                 padding: 8px 16px;
             }
+            .footer {
+                font-size: 14px;
+                padding: 8px 0;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>اهداء من متجر هيكس</h2>
-        <button id="visitButton" onclick="window.location.href='https://hex-store.com'">للزيارة</button>
         <div class="hex-grid" id="hexGridHost">
             <div class="party-text" id="partyText">مبروك</div>
         </div>
@@ -304,6 +320,15 @@
             <button id="partyButton" class="icon-btn party-btn" title="بارتي">🎉</button>
             <button id="installButton" class="icon-btn disabled" title="حفظ كتطبيق"><i class="fas fa-download"></i></button>
         </div>
+        <div class="text-container">
+            <p>هذه اللوحة مجانية ولا يجوز بيعها مقدمة من</p>
+            <p>hex-store</p>
+        </div>
+        <div class="logo-container">
+            <a href="https://hex-store.com">
+                <img src="assets/logo.png" alt="hex-store logo">
+            </a>
+        </div>
     </div>
     <div class="install-instructions" id="installInstructions">
         <div class="install-instructions-content">
@@ -313,6 +338,9 @@
             <p>3. اضغط على <strong>إضافة</strong> لتثبيت التطبيق.</p>
             <button onclick="closeInstallInstructions()">إغلاق</button>
         </div>
+    </div>
+    <div class="footer">
+        جميع الحقوق محفوظة لدى hex-store 2025
     </div>
     <script>
         const letters = ['أ', 'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ك', 'ل', 'م', 'ن', 'ه', 'و', 'ي'];

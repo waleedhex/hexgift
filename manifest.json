@@ -1,8 +1,9 @@
 {
     "name": "لوحة الحروف السداسية",
     "short_name": "لوحة هيكس",
-    "description": "لوحة الحروف السداسية مقدمة من متجر هيكس",
+    "description": "لوحة الحروف السداسية المجانية مقدمة من hex-store",
     "start_url": "/index.html",
+    "scope": "/",
     "display": "standalone",
     "background_color": "#4b0082",
     "theme_color": "#4b0082",
@@ -10,11 +11,18 @@
         {
             "src": "icons/icon-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
             "src": "icons/icon-512x512.png",
             "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-180x180.png",
+            "sizes": "180x180",
             "type": "image/png"
         }
     ]
